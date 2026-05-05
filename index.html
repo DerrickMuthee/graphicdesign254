@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SD DESIGNS</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #F4F4F4;
+      color: #1F2937;
+      text-align: center;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: white;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    .navbar a {
+      margin: 10px;
+      text-decoration: none;
+      color: #1E3A8A;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      color: #7C3AED;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #1E3A8A, #7C3AED);
+      color: white;
+      padding: 70px 20px;
+      border-radius: 0 0 30px 30px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 0;
+    }
+
+    .tagline {
+      font-size: 18px;
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+
+    .hero-buttons button {
+      margin: 10px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      background: white;
+      color: #1E3A8A;
+    }
+
+    .hero-buttons button:hover {
+      background: #ddd;
+    }
+
+    /* SECTIONS */
+    .section {
+      background: white;
+      padding: 25px;
+      margin: 25px auto;
+      max-width: 900px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #1E3A8A;
+    }
+
+    /* FORM */
+    input, textarea, select {
+      width: 80%;
+      padding: 10px;
+      margin: 6px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #1E3A8A;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #7C3AED;
+    }
+
+    /* GALLERY */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 200px;
+      border-radius: 10px;
+      transition: 0.3s;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* FOOTER */
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background: #1F2937;
+      color: white;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <a href="#about">About</a>
+  <a href="#order">Order</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#work">Work</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <h1>SD DESIGNS</h1>
+  <p class="tagline">Creative Designs That Speak for You</p>
+
+  <div class="hero-buttons">
+    <a href="#order"><button>Hire Me</button></a>
+    <a href="#work"><button>View My Work</button></a>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<div class="section" id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a very professional graphic designer. I started designing posters back in the year <b>2017</b>,
+    and through this journey I have learnt and improved my skills over time. I create clean, attractive
+    and effective designs that communicate clearly and capture attention.
+  </p>
+</div>
+
+<!-- ORDER -->
+<div class="section" id="order">
+  <h2>Place an Order</h2>
+
+  <form action="https://formsubmit.co/smashdee30@gmail.com" method="POST">
+
+    <input type="text" name="name" placeholder="Your Name" required><br>
+
+    <input type="text" name="phone" placeholder="Your Phone Number" required><br>
+
+    <select name="service" required>
+      <option value="">Select Service</option>
+      <option value="Social Media Poster">Social Media Poster</option>
+      <option value="Printing Poster">Printing Poster</option>
+    </select><br>
+
+    <textarea name="message" placeholder="Describe your design..." rows="5" required></textarea><br>
+
+    <button type="submit">Send Order</button>
+
+  </form>
+</div>
+
+<!-- PRICING -->
+<div class="section" id="pricing">
+  <h2>Pricing</h2>
+
+  <p><b>Social Media Posters:</b><br>
+  KES 750 (Facebook, WhatsApp, Instagram posting included)</p>
+
+  <p><b>Printing Posters:</b><br>
+  KES 500 (Simple) | KES 350 (Medium) | KES 300 (Basic)</p>
+</div>
+
+<!-- WORK -->
+<div class="section" id="work">
+  <h2>My Work</h2>
+
+  <div class="gallery">
+    <img src="poster1.jpg">
+    <img src="poster2.jpg">
+    <img src="poster3.jpg">
+    <img src="poster4.jpg">
+    <img src="poster5.jpg">
+    <img src="poster6.jpg">
+    <img src="poster7.jpg">
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="section" id="contact">
+  <h2>Contact Me</h2>
+
+  <p>
+    📞 0796895600 <br>
+    📞 0112787660 (Safaricom)
+  </p>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 SD DESIGNS | All Rights Reserved</p>
+  <p>Built with passion in Kenya 🇰🇪</p>
+</footer>
+
+</body>
+</html>
